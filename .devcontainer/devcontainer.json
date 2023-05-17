@@ -1,6 +1,6 @@
 {
     "name": "CS143 Dev",
-    "image": "cs143:latest",
+    "image": "ethanyang529/cs143:latest",
     "customizations": {
         "vscode": {
             "extensions": [
