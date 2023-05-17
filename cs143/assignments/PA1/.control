@@ -1,0 +1,12 @@
+# control file for PA1 - read by bin/pa_fetch and bin/pa_submit
+
+DATES 20230411T103000 20230420T235959 20230503T235959
+SUBMITDIR /afs/ir/class/cs143/submissions/PA1
+MAXSIZE 10485760  # no more than 10MB per submission
+USERFILE README 1 2  # projects may be done alone or with a partner
+
+COPY Makefile README cool.flex test.cl mycoolc
+LINK src include
+
+IGNORE core *.o lexer *~ cool-lex.cc .git
+

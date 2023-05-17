@@ -1,0 +1,14 @@
+# control file for PA2 - read by bin/pa_fetch and bin/pa_submit
+
+DATES 20230420T103000 20230502T235959 20230505T235959
+SUBMITDIR /afs/ir/class/cs143/submissions/PA2
+MAXSIZE 10485760  # no more than 10MB per submission
+USERFILE README 1 2  # projects may be done alone or with a partner
+
+COPY Makefile README mycoolc myparser cool.y cool-tree.handcode.h good.cl bad.cl
+LINK src include lexer
+
+IGNORE core *.o parser *~ cool-parse.cc cool.tab.h .git
+
+REQUIRED README
+

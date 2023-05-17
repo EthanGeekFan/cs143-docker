@@ -1,0 +1,13 @@
+# control file for PA3 - read by bin/pa_fetch and bin/pa_submit
+
+DATES 20150428T110000 20150514T235959 20140605T235959
+SUBMITDIR /usr/class/cs143/submissions/PA3
+MAXSIZE 20485760  # no more than 10MB per submission
+USERFILE README 1 2  # projects may be done alone or with a partner
+
+COPY Makefile README mycoolc mysemant semant.cc semant.h cool-tree.h cool-tree.handcode.h good.cl bad.cl
+LINK src include lexer parser
+
+IGNORE core *.o semant *~ .git
+
+REQUIRED README

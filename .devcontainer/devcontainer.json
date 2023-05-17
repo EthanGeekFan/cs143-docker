@@ -1,0 +1,30 @@
+{
+    "name": "CS143 Dev",
+    "image": "cs143:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "github.copilot",
+                "ms-vscode.makefile-tools",
+                "rioj7.command-variable",
+                "augustocdias.tasks-shell-input",
+                "eamodio.gitlens",
+                "daohong-emilio.yash"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "C_Cpp.clang_format_style": "GNU",
+                "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+                "editor.formatOnPaste": true,
+                "editor.formatOnSave": true,
+                "editor.formatOnType": true,
+                "editor.formatOnSaveMode": "modifications",
+                "editor.formatOnPasteMode": "indent"
+            }
+        }
+    },
+    "runArgs": [
+        // "--net=host"
+    ]
+}
