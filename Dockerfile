@@ -14,6 +14,7 @@ RUN apt-get update && apt-get upgrade -y && \
     curl \
     vim \
     libc6:i386 \
+    lib32stdc++6 \
     zsh \
     htop \
     python3 \
@@ -23,6 +24,7 @@ RUN apt-get update && apt-get upgrade -y && \
     python2 \
     perl \
     tcsh
+
 
 # Install oh-my-zsh
 RUN sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -51,3 +53,6 @@ RUN echo "export PATH=/afs/ir/class/cs143/bin:\$PATH" >> ~/.zshrc
 
 # Clean up
 RUN apt-get clean
+
+# Link python2 to python
+RUN ln -fs /usr/bin/python2 /usr/bin/python
